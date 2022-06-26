@@ -68,14 +68,19 @@ address {
     font-style: normal;
 }
 
-/* ШАПКА */
-.container{
-margin-left: auto;
-margin-right: auto;
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+/* .section-box .hero{
+margin-bottom: 94px;
+} */
+
+/* ШАПКА */
 
 .main-nav{
 display: flex;
@@ -83,6 +88,7 @@ align-items: center;
 justify-content: space-between;
 margin-left: auto;
 margin-right: auto;
+border-bottom: 1px solid #ECECEC;
 
 }
 
@@ -242,6 +248,7 @@ background-color: #188CE8;
 display: flex;
 margin-left: auto;
 margin-right: auto;
+margin-top: 94px;
 }
 
 .features .item{
@@ -255,8 +262,6 @@ margin-left: 30px;
 }
 
 .features-list{
-margin-top: 94px;
-
 color:var(--title-text-color);
 font-size: 14px;
 font-weight: 700;
@@ -287,7 +292,7 @@ margin-right: auto;
 
 .section-title{
 margin-bottom: 0px;
-padding-top: 94px;
+margin-top: 94px;
 
 color: var(--title-text-color);
 font-weight: 700;
@@ -298,13 +303,32 @@ text-align: center;
 
 /*Наша команда*/
 
+.team-box{
+background-color: var(--section-bgc-grey);
+}
+
 .team{
 display: flex;
 
+padding-bottom: 94px;
 margin-left: auto;
 margin-right: auto;
 
-background-color: var(--section-bgc-grey);
+}
+.team-name{
+padding-top: 94px;
+padding-bottom: 50px;
+}
+
+.element-team{
+display: flex;
+justify-content: center;
+flex-direction: column;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+.team .element-team+.element-team{
+    margin-left: 30px;
 }
 
 .section-name {
@@ -326,6 +350,16 @@ text-align: center;
 
 
 /* Подвал */
+.footer{
+background-color: var(--secondery-bgc-black);
+}
+.footer-content{
+display: flex;
+flex-direction: column;
+padding-bottom: 60px;
+padding-top: 60px;
+}
+
 
 .map{
 color:var(--primery-white-color);
@@ -351,6 +385,7 @@ text-decoration: none;
 
 
 .logo-footer{
+padding-bottom: 20px;
 
 color: var(--primery-white-color);
 font-family: 'Raleway', sans-serif;
@@ -388,8 +423,7 @@ color: var(--primery-white-color);
 }
 
 .works {
-    margin-top: 20px;
-    margin-bottom: 4px;
+ margin-bottom: 4px;
 
 color: var(--title-text-color);
 font-weight: 700;
@@ -400,6 +434,7 @@ letter-spacing: 0.06em;
 .work-program{
 font-size: 16px;
 line-height: 1.88;
+margin-bottom: 0px;
 }
 
 .cards .work-program.works{
@@ -410,12 +445,18 @@ justify-content: end;
 .cards{
 display: flex;
 flex-wrap: wrap;
+margin-bottom: 94px;
+
 }
 
 .element{
+    display: flex;
+    flex-direction: column;
 width: 370px;
 margin-right: 30px;
 margin-bottom: 30px;
+border: 1px solid #EEEEEE;
+
 }
 
 .element:nth-child(3n){
@@ -424,6 +465,12 @@ margin-right: 0px;
 
 .element:nth-last-child(-n + 3){
 margin-bottom: 0px;
+}
+
+.card-title{
+display: flex;
+flex-direction: column;
+margin: 20px 24px;
 }
 
 .button-item{

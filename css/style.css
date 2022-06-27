@@ -9,10 +9,6 @@
 
 
 body{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
-
 background-color: var(--primery-white-color);
 color: var(--primary-text-color);
 font-family: 'Roboto';
@@ -20,7 +16,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 }
-
 
 html {
     box-sizing: border-box;
@@ -86,16 +81,12 @@ margin-bottom: 94px;
 display: flex;
 align-items: center;
 justify-content: space-between;
-margin-left: auto;
-margin-right: auto;
 border-bottom: 1px solid #ECECEC;
-
 }
 
 .logo{
 padding-top: 24px;
 padding-bottom: 25px;
-padding-right: 93px;
 
 color: #000000;
 
@@ -127,6 +118,7 @@ align-items: center;
 
 .site-nav{
 display: flex;
+margin-left: 93px;
 }
 
 .site-nav .item+ .item{
@@ -194,20 +186,17 @@ color: var(--accent-color);
 }
 
 .hero{
-margin-left: auto;
-margin-right: auto;
+text-align: center;
+padding: 200px;
 background-color: var(--secondery-bgc-black);
 color: var(--primery-white-color);
-font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
 }
 
 
 .title {
+width: 693px;
+margin-right: auto;
+margin-left: auto;
 margin-top: 0;
 margin-bottom: 30px;
 
@@ -224,6 +213,7 @@ text-transform: uppercase;
 border-radius: 4px;
 padding: 10px 32px;
 border-color: var(--accent-color);
+border: none;
 
 color: var(--primery-white-color);
 background-color: var(--accent-color);
@@ -244,11 +234,12 @@ background-color: #188CE8;
 
 
 /* Особенности*/
+.section{
+padding: 94px 0;
+}
+
 .features{
 display: flex;
-margin-left: auto;
-margin-right: auto;
-margin-top: 94px;
 }
 
 .features .item{
@@ -276,6 +267,11 @@ line-height: 1.71;
 }
 
 /*Чем мы занимаемся*/
+
+.section-box{
+padding-bottom: 94px;
+}
+
 .image{
 display: flex;
 margin-top: 50px;
@@ -292,7 +288,6 @@ margin-right: auto;
 
 .section-title{
 margin-bottom: 0px;
-margin-top: 94px;
 
 color: var(--title-text-color);
 font-weight: 700;
@@ -304,62 +299,54 @@ text-align: center;
 /*Наша команда*/
 
 .team-box{
+    padding: 94px 0;
 background-color: var(--section-bgc-grey);
 }
 
 .team{
 display: flex;
 
-padding-bottom: 94px;
-margin-left: auto;
-margin-right: auto;
-
 }
 .team-name{
-padding-top: 94px;
 padding-bottom: 50px;
 }
 
 .element-team{
-display: flex;
-justify-content: center;
-flex-direction: column;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+
+background-color: var(--primery-white-color);
 }
 .team .element-team+.element-team{
     margin-left: 30px;
 }
 
 .section-name {
-padding-top: 30px;
-padding-bottom: 10px;
-
 color: var(--title-text-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;}
 
+.team-title{
+padding: 30px 0;
+}
 
 .position{
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
+margin-bottom: 0px;
 }
 
 
 /* Подвал */
+
+
 .footer{
+padding: 60px 0;
 background-color: var(--secondery-bgc-black);
 }
-.footer-content{
-display: flex;
-flex-direction: column;
-padding-bottom: 60px;
-padding-top: 60px;
-}
-
 
 .map{
 color:var(--primery-white-color);
@@ -385,7 +372,8 @@ text-decoration: none;
 
 
 .logo-footer{
-padding-bottom: 20px;
+display: inline-block;
+margin-bottom: 20px;
 
 color: var(--primery-white-color);
 font-family: 'Raleway', sans-serif;
@@ -395,10 +383,13 @@ line-height: 1.19;
 text-decoration: none;
 }
 
+.footer .item+ .item{
+margin-top: 9px;}
+
 /* portfolio */
 
 .button-portfolio {
-    padding: 6px 22px;
+padding: 6px 22px;
 color: var(--title-text-color);
 background-color: var(--section-bgc-grey);
 font-family: inherit;
@@ -419,11 +410,10 @@ background-color: var(--accent-color);
 .button-portfolio.active{
 background-color: var(--accent-color);
 color: var(--primery-white-color);
-
 }
 
 .works {
- margin-bottom: 4px;
+margin-bottom: 4px;
 
 color: var(--title-text-color);
 font-weight: 700;
@@ -431,6 +421,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 }
+
 .work-program{
 font-size: 16px;
 line-height: 1.88;
@@ -445,14 +436,10 @@ justify-content: end;
 .cards{
 display: flex;
 flex-wrap: wrap;
-margin-bottom: 94px;
-
 }
 
 .element{
-    display: flex;
-    flex-direction: column;
-width: 370px;
+width: calc((100% - 60px) / 3);
 margin-right: 30px;
 margin-bottom: 30px;
 border: 1px solid #EEEEEE;
@@ -468,19 +455,16 @@ margin-bottom: 0px;
 }
 
 .card-title{
-display: flex;
-flex-direction: column;
-margin: 20px 24px;
+padding: 20px 24px;
 }
 
 .button-item{
 display: flex;
 justify-content: center;
 margin-bottom: 50px;
-margin-top: 94px;
 }
 
-.button-item .item{
+.button-item .item:not(:last-child){
 margin-right: 8px;
 }
 
